@@ -1,0 +1,812 @@
+/*
+  YASB Theme — Gran Turismo Prologue
+  Palette: prata · preto · branco frio · monocrome
+*/
+
+* {
+    font-size: 11px;
+    color: #D8DCE0;
+    font-weight: 400;
+    font-family: "IBM Plex Mono", "JetBrainsMono NFP";
+    margin: 0;
+    padding: 0;
+}
+
+/* ── BARRA PRINCIPAL ── */
+.yasb-bar {
+    padding: 0 8px;
+    margin: 0;
+    background-color: rgba(8, 8, 10, 0.55);
+    border-bottom: 1px solid rgba(200, 210, 220, 0.12);
+}
+
+.widget {
+    padding: 0 8px;
+    margin: 0;
+}
+
+/* ── JANELA ATIVA ── */
+.active-window-widget .icon {
+    margin-right: 8px;
+}
+
+/* ── KOMOREBI WORKSPACES ── */
+.komorebi-workspaces .widget-container {
+    margin-left: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+.komorebi-workspaces .offline-status {
+    color: #6A7080;
+    font-size: 12px;
+    padding: 0;
+    font-weight: 600;
+}
+.komorebi-workspaces .ws-btn {
+    border: none;
+    background-color: rgba(200, 210, 220, 0.10);
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    color: rgba(0,0,0,0);
+}
+.komorebi-workspaces .ws-btn:hover {
+    background-color: rgba(200, 210, 220, 0.22);
+}
+.komorebi-workspaces .ws-btn.populated:hover {
+    background-color: rgba(200, 210, 220, 0.38);
+}
+.komorebi-workspaces .ws-btn.populated {
+    background-color: #707888;
+}
+.komorebi-workspaces .ws-btn.active {
+    background-color: #C8D0D8;
+    width: 28px;
+    height: 10px;
+}
+
+/* ── POWER MENU ── */
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #B0B8C0;
+    font-weight: 600;
+    font-family: "IBM Plex Mono";
+}
+.power-menu-widget .label {
+    color: #B0B8C0;
+    font-size: 13px;
+}
+.power-menu-popup {
+    background-color: rgba(200, 210, 220, 0.05);
+    border-radius: 0;
+    border: 1px solid rgba(200, 210, 220, 0.15);
+}
+.power-menu-popup .button {
+    padding: 0;
+    width: 110px;
+    height: 90px;
+    border-radius: 0;
+    background-color: rgba(200, 210, 220, 0.04);
+    border: 1px solid rgba(200, 210, 220, 0.10);
+    font-family: "IBM Plex Mono";
+    color: #D8DCE0;
+    margin: 8px;
+}
+.power-menu-popup .button.hover {
+    background-color: rgba(200, 210, 220, 0.12);
+    border: 1px solid rgba(200, 210, 220, 0.30);
+}
+.power-menu-popup .button .label {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #D8DCE0;
+    font-family: "IBM Plex Mono";
+}
+.power-menu-popup .button .icon {
+    font-size: 32px;
+    padding-top: 8px;
+    color: #C8D0D8;
+}
+.power-menu-popup .button.cancel .icon {
+    color: #888890;
+}
+.power-menu-popup .button.cancel .label {
+    color: #888890;
+}
+.power-menu-popup .button.shutdown .icon {
+    color: #FFFFFF;
+}
+.power-menu-popup .button.shutdown .label {
+    color: #FFFFFF;
+}
+
+/* ── ÍCONES ── */
+.icon {
+    font-size: 16px;
+}
+.volume-widget .icon {
+    font-size: 15px;
+    color: #B0B8C0;
+    margin-top: 2px;
+}
+.cpu-widget .icon,
+.memory-widget .icon,
+.volume-widget .icon,
+.weather-widget .icon,
+.wifi-widget .icon {
+    margin: 0 4px 1px 0;
+}
+.cpu-widget .icon,
+.memory-widget .icon {
+    font-size: 14px;
+    color: #9098A0;
+}
+.memory-widget .icon {
+    color: #9098A0;
+}
+.wifi-widget .icon {
+    font-size: 15px;
+    color: #B0B8C0;
+    margin: 2px 4px 0 0;
+}
+.weather-widget .icon.sunnyDay {
+    color: #D8DCE0;
+}
+.weather-widget .label.sunnyDay {
+    color: #D8DCE0;
+}
+.weather-widget .icon.clearNight {
+    color: #707888;
+    font-size: 22px;
+    margin: 1px 2px 0px 0;
+}
+
+/* ── BATTERY ── */
+.battery-widget .icon {
+    font-size: 15px;
+    margin-right: 4px;
+    color: #B0B8C0;
+    margin-top: 2px;
+}
+
+/* ── BLUETOOTH ── */
+.bluetooth-widget .icon {
+    font-size: 15px;
+    color: #B0B8C0;
+    margin-top: 2px;
+}
+
+/* ── APPS WIDGET ── */
+.apps-widget {
+    padding: 2px 0px 0px 4px;
+}
+.apps-widget .label {
+    font-size: 11px;
+    padding: 0 2px;
+    color: #9098A0;
+}
+
+/* ── SEPARATOR ── */
+.separator-widget .label {
+    color: rgba(200, 210, 220, 0.20);
+    padding: 0;
+    margin: 0;
+}
+.separator-widget {
+    padding: 0;
+    margin: 0;
+}
+
+/* ── MEDIA WIDGET ── */
+.media-widget {
+    padding: 0;
+    padding-left: 2px;
+    margin: 0;
+    border-radius: 0;
+    margin-right: 8px;
+}
+.media-widget .label {
+    background-color: transparent;
+    color: #D8DCE0;
+}
+.media-widget .btn {
+    color: #9098A0;
+    padding: 0 3px;
+    margin: 4px 0;
+    font-family: Segoe Fluent Icons;
+}
+.media-widget .btn:hover {
+    color: #FFFFFF;
+}
+.media-widget .btn.play {
+    background-color: rgba(200, 210, 220, 0.08);
+    border-radius: 0;
+    font-size: 14px;
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+    color: rgba(200, 210, 220, 0.10);
+    font-size: 12px;
+    background-color: transparent;
+}
+
+/* ── TASKBAR ── */
+.taskbar-widget .app-container {
+    margin: 3px 2px;
+    border-radius: 0;
+    padding: 0 8px;
+    background-color: transparent;
+    border: none;
+}
+.taskbar-widget .app-container.foreground {
+    background-color: rgba(200, 210, 220, 0.10);
+    border-bottom: 1px solid #C8D0D8;
+}
+.taskbar-widget .app-container.running {
+    border-bottom: 1px solid rgba(200, 210, 220, 0.28);
+}
+.taskbar-widget .app-container.flashing {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.taskbar-widget .app-container:hover {
+    background-color: rgba(200, 210, 220, 0.07);
+}
+.taskbar-widget .app-container .app-title {
+    padding-left: 5px;
+    color: #D8DCE0;
+    font-size: 11px;
+    font-family: "IBM Plex Mono", "JetBrainsMono NFP";
+}
+
+/* ── VOLUME SLIDER ── */
+.volume-slider {
+    border: none;
+}
+.volume-slider::handle {
+    background-color: #C8D0D8;
+    border: none;
+    border-radius: 0;
+    width: 6px;
+    height: 12px;
+    margin: -4px 0;
+   
+}
+
+/* ── SYSTRAY ── */
+.systray .unpinned-container {
+    background-color: rgba(200, 210, 220, 0.06);
+    border-radius: 0;
+}
+.systray .pinned-container {
+    background: transparent;
+}
+.systray .button {
+    border-radius: 0;
+    padding: 2px 2px;
+}
+.systray .button:hover {
+    background: rgba(200, 210, 220, 0.10);
+}
+.systray .unpinned-visibility-btn {
+    border-radius: 0;
+    height: 20px;
+    width: 16px;
+    background: transparent;
+    border: none;
+}
+.systray .unpinned-visibility-btn:checked {
+    background: transparent;
+}
+.systray .unpinned-visibility-btn:hover {
+    background: transparent;
+    border: none;
+}
+
+/* ── WIFI MENU ── */
+.wifi-menu {
+    font-family: 'IBM Plex Mono';
+    background-color: rgba(8, 8, 10, 0.55);
+    max-height: 400px;
+    min-height: 375px;
+    min-width: 450px;
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    border-radius: 0;
+}
+.wifi-menu .progress-bar {
+    max-height: 2px;
+    color: #C8D0D8;
+}
+.wifi-menu .header {
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: rgba(200, 210, 220, 0.06);
+    color: #D8DCE0;
+    border-bottom: 1px solid rgba(200, 210, 220, 0.12);
+}
+.wifi-menu .error-message {
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: rgba(100, 100, 110, 0.5);
+    color: #D8DCE0;
+    border-bottom: 1px solid rgba(200, 210, 220, 0.15);
+}
+.wifi-menu .wifi-list {
+    background-color: transparent;
+    margin-right: 3px;
+}
+.wifi-menu .wifi-item {
+    min-height: 35px;
+    padding: 2px 12px;
+    margin: 2px 4px;
+    color: #D8DCE0;
+}
+.wifi-menu .wifi-item:hover {
+    background-color: rgba(200, 210, 220, 0.06);
+    border-radius: 0;
+}
+.wifi-menu .wifi-item[active=true] {
+    background-color: rgba(200, 210, 220, 0.10);
+    border: 1px solid rgba(200, 210, 220, 0.20);
+    border-radius: 0;
+    min-height: 80px;
+}
+.wifi-menu .wifi-item .icon {
+    font-family: 'Segoe Fluent Icons';
+    font-size: 26px;
+    margin-right: 10px;
+    color: #9098A0;
+}
+.wifi-menu .wifi-item .name {
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    margin-right: 10px;
+    color: #D8DCE0;
+}
+.wifi-menu .wifi-item .password {
+    font-family: 'IBM Plex Mono';
+    background-color: transparent;
+    font-size: 14px;
+    color: #D8DCE0;
+}
+.wifi-menu .wifi-item .status {
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    color: #9098A0;
+}
+.wifi-menu .wifi-item .strength {
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    color: #9098A0;
+}
+.wifi-menu .wifi-item .controls-container {
+    padding-top: 8px;
+}
+.wifi-menu .wifi-item .connect {
+    background-color: rgba(200, 210, 220, 0.12);
+    padding: 4px 30px;
+    border-radius: 0;
+    border: 1px solid rgba(200, 210, 220, 0.25);
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.wifi-menu .wifi-item .connect:hover {
+    background-color: rgba(200, 210, 220, 0.22);
+}
+.wifi-menu .wifi-item .connect:pressed {
+    background-color: rgba(200, 210, 220, 0.32);
+}
+.wifi-menu .footer {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px;
+    margin-top: 2px;
+    color: #606870;
+    background-color: rgba(200, 210, 220, 0.04);
+    border-top: 1px solid rgba(200, 210, 220, 0.10);
+}
+.wifi-menu .footer .settings-button {
+    font-family: 'IBM Plex Mono';
+    background-color: transparent;
+    border: none;
+    padding: 0 2px;
+    min-width: 26px;
+    min-height: 26px;
+    color: #D8DCE0;
+}
+.wifi-menu .footer .refresh-icon {
+    font-family: 'Segoe Fluent Icons';
+    background-color: transparent;
+    border: none;
+    min-width: 26px;
+    min-height: 26px;
+    color: #D8DCE0;
+}
+.wifi-menu .footer .refresh-icon:hover {
+    background-color: rgba(200, 210, 220, 0.10);
+    border-radius: 0;
+}
+
+/* ── CAVA ── */
+.cava-widget {
+    padding: 0 4px;
+    margin: 0;
+}
+/* ── TASKBAR PREVIEW ── */
+.taskbar-preview {
+    border-radius: 0;
+    background-color: rgba(8, 8, 10, 0.90);
+    border: 1px solid rgba(200, 210, 220, 0.15);
+}
+.taskbar-preview.flashing {
+    background-color: rgba(200, 210, 220, 0.08);
+}
+.taskbar-preview .header {
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+.taskbar-preview .header .title {
+    color: #D8DCE0;
+    font-family: "IBM Plex Mono";
+    font-weight: 600;
+    font-size: 13px;
+}
+.taskbar-preview .close-button {
+    color: #606870;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    min-width: 20px;
+    border-radius: 0;
+    min-height: 20px;
+}
+.taskbar-preview .close-button:hover {
+    color: #FFFFFF;
+    background-color: rgba(80, 80, 90, 0.5);
+}
+
+.calendar {
+    background-color: rgba(8, 8, 10, 0.55);
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    border-radius: 0;
+    background-clip: border-box;
+}
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+    background-color: transparent;
+    color: #9098A0;
+    font-family: 'IBM Plex Mono';
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.calendar .calendar-table::item:selected {
+    color: #FFFFFF;
+    border: 1px solid rgba(200, 210, 220, 0.35);
+    background-color: rgba(200, 210, 220, 0.12);
+    border-radius: 0;
+}
+.calendar .day-label {
+    margin-top: 20px;
+}
+.calendar .day-label,
+.calendar .month-label,
+.calendar .date-label {
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    color: #D8DCE0;
+    font-weight: 700;
+    min-width: 180px;
+    max-width: 180px;
+}
+.calendar .month-label {
+    font-weight: normal;
+    color: #9098A0;
+}
+.calendar .date-label {
+    font-size: 88px;
+    font-weight: 900;
+    color: #C8D0D8;
+    margin-top: -20px;
+}
+
+.context-menu {
+    background-color: rgba(8, 8, 10, 0.55);
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    color: #D8DCE0;
+    font-family: "IBM Plex Mono";
+    font-size: 11px;
+}
+.context-menu::item {
+    color: #D8DCE0;
+    padding: 4px 12px;
+    font-family: "IBM Plex Mono";
+}
+.context-menu::item:selected {
+    background-color: rgba(200, 210, 220, 0.10);
+    color: #FFFFFF;
+}
+.launchpad-widget .icon {
+    font-size: 16px;
+    color: #9098A0;
+}
+.launchpad .launchpad-container {
+    background-color: rgba(8, 8, 10, 0.55) !important;
+}
+.launchpad .drop-overlay {
+    background-color: rgba(8, 8, 10, 0.55) !important;
+}.launchpad .search-container {
+    border-bottom: 1px solid rgba(200, 210, 220, 0.12);
+    background-color: rgba(8, 8, 10, 0.50);
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+}
+.launchpad .search-input {
+    max-width: 400px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-height: 24px;
+    max-height: 24px;
+    font-family: "IBM Plex Mono";
+    border-radius: 0;
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    background-color: rgba(8, 8, 10, 0.50);
+    color: #D8DCE0;
+}
+.launchpad .search-input:focus {
+    border: 1px solid rgba(200, 210, 220, 0.35);
+    background-color: rgba(200, 210, 220, 0.05);
+}
+.launchpad .app-icon {
+    max-width: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    margin: 12px 4px 4px 4px;
+}
+.launchpad .app-icon:hover {
+    border: 1px solid rgba(200, 210, 220, 0.30);
+    background-color: rgba(200, 210, 220, 0.06);
+}
+.launchpad .app-icon:focus {
+    border: 1px solid rgba(200, 210, 220, 0.40);
+    background-color: rgba(200, 210, 220, 0.08);
+}
+.launchpad .app-icon .title {
+    color: #9098A0;
+    font-family: "IBM Plex Mono";
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+.launchpad .context-menu {
+    background-color: rgba(8, 8, 10, 0.90);
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    border-radius: 0;
+    padding: 4px 0px;
+    font-family: "IBM Plex Mono";
+    font-size: 11px;
+    color: #D8DCE0;
+}
+.launchpad .context-menu::item {
+    background-color: transparent;
+    padding: 6px 12px;
+    margin: 2px 6px;
+    border-radius: 0;
+    min-width: 100px;
+    color: #D8DCE0;
+}
+.launchpad .context-menu::item:selected {
+    background-color: rgba(200, 210, 220, 0.10);
+    color: #FFFFFF;
+}
+/* ── NOTES MENU ── */
+.notes-widget .icon {
+    font-size: 16px;
+    color: #9098A0;
+}
+.notes-menu {
+    min-width: 400px;
+    max-width: 400px;
+    background-color: rgba(8, 8, 10, 0.75);
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    border-radius: 0;
+}
+.notes-menu .note-item {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(200, 210, 220, 0.08);
+}
+.notes-menu .note-item:hover {
+    background-color: rgba(200, 210, 220, 0.06);
+}
+.notes-menu .note-item .title {
+    font-size: 12px;
+    font-family: "IBM Plex Mono";
+    color: #D8DCE0;
+}
+.notes-menu .note-item .date {
+    font-size: 11px;
+    font-family: "IBM Plex Mono";
+    color: #606870;
+}
+.notes-menu .empty-list {
+    font-family: "IBM Plex Mono";
+    color: rgba(200, 210, 220, 0.20);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0 20px 0;
+}
+.notes-menu .delete-button {
+    color: #606870;
+    background: transparent;
+    border: none;
+    font-size: 8px;
+    padding: 7px 8px;
+    border-radius: 0;
+}
+.notes-menu .delete-button:hover {
+    background-color: rgba(200, 210, 220, 0.08);
+    color: #D8DCE0;
+}
+.notes-menu .copy-button {
+    color: #606870;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 4px 8px;
+    border-radius: 0;
+}
+.notes-menu .copy-button:hover {
+    background-color: rgba(200, 210, 220, 0.08);
+    color: #D8DCE0;
+}
+.notes-menu .add-button,
+.notes-menu .cancel-button {
+    padding: 8px;
+    background-color: rgba(200, 210, 220, 0.08);
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    border-radius: 0;
+    color: #D8DCE0;
+    font-family: "IBM Plex Mono";
+    font-size: 11px;
+}
+.notes-menu .cancel-button {
+    margin-left: 4px;
+}
+.notes-menu .add-button:hover,
+.notes-menu .cancel-button:hover {
+    background-color: rgba(200, 210, 220, 0.15);
+}
+.notes-menu .scroll-area {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+.notes-menu .note-input {
+    background-color: rgba(8, 8, 10, 0.50);
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    font-family: "IBM Plex Mono";
+    font-size: 12px;
+    max-height: 30px;
+    padding: 4px;
+    border-radius: 0;
+    color: #D8DCE0;
+}
+.notes-menu .note-input:focus {
+    border: 1px solid rgba(200, 210, 220, 0.35);
+}
+.audio-menu .apps-container .app-volume .app-slider::handle {
+    background-color: #C8D0D8;
+    border: none;
+    border-radius: 0;
+    width: 6px;
+    height: 12px;
+    margin: -4px 0;
+}
+.audio-menu {
+    background-color: rgba(8, 8, 10, 0.75);
+    min-width: 300px;
+    border: 1px solid rgba(200, 210, 220, 0.15);
+    border-radius: 0;
+}
+.audio-menu .system-volume-container .volume-slider {
+    border: none;
+}
+.audio-menu .system-volume-container .volume-slider::groove:horizontal {
+    background-color: rgba(200, 210, 220, 0.18);
+    height: 3px;
+    border-radius: 0;
+}
+.audio-menu .system-volume-container .volume-slider::handle:horizontal {
+    background-color: #C8D0D8;
+    border: none;
+    border-radius: 0;
+    width: 6px;
+    height: 12px;
+    margin: -5px 0;
+}
+.audio-menu .audio-container .device {
+    background-color: transparent;
+    border: none;
+    padding: 3px 8px 3px 4px;
+    margin: 1px 0;
+    font-size: 12px;
+    border-radius: 0;
+    color: #D8DCE0;
+}
+.audio-menu .audio-container .device.selected {
+    background-color: rgba(200, 210, 220, 0.10);
+    border: 1px solid rgba(200, 210, 220, 0.20);
+}
+.audio-menu .audio-container .device:hover {
+    background-color: rgba(200, 210, 220, 0.06);
+}
+.audio-menu .toggle-apps {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 0;
+    color: #9098A0;
+}
+.audio-menu .toggle-apps.expanded {
+    background-color: rgba(200, 210, 220, 0.10);
+}
+.audio-menu .toggle-apps:hover {
+    background-color: rgba(200, 210, 220, 0.08);
+}
+.audio-menu .apps-container {
+    padding: 4px;
+    margin-top: 8px;
+    border-radius: 0;
+    background-color: rgba(200, 210, 220, 0.04);
+    border: 1px solid rgba(200, 210, 220, 0.10);
+}
+.audio-menu .apps-container .app-volume {
+    padding: 2px 0;
+    color: #D8DCE0;
+}
+.audio-menu .apps-container .app-volume:hover {
+    background-color: rgba(200, 210, 220, 0.06);
+}
+.audio-menu .apps-container .app-volume .app-label {
+    color: #D8DCE0;
+    font-size: 11px;
+}
+.audio-menu .apps-container .app-volume .app-icon-container {
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    border-radius: 0;
+    margin-right: 6px;
+}
+.audio-menu .apps-container .app-volume .app-icon-container:hover {
+    background-color: rgba(200, 210, 220, 0.10);
+}
+.audio-menu .apps-container .app-volume .app-slider::groove {
+    background-color: rgba(200, 210, 220, 0.18);
+    border-radius: 0;
+    height: 3px;
+}
+.audio-menu .apps-container .app-volume .app-slider::handle {
+    background-color: #C8D0D8;
+    border: none;
+    border-radius: 0;
+    width: 6px;
+    height: 12px;
+    margin: -4px 0;
+}
