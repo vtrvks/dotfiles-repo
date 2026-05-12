@@ -9,7 +9,7 @@ theme, font. uses PowerShell 7 as default.
 minimal status bar that replaces the win taskbar for personal use. runs alongside taskbar hide and f.lux.
 
 ## fastfetch
-terminal customization (hardware info, temperatures, and system details)
+terminal customization (hardware info, temperatures, and system details).
 
 ## vscode
 .
